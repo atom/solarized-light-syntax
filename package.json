@@ -1,0 +1,10 @@
+{
+  "name": "solarized-light-syntax",
+  "theme": true,
+  "version": "0.1.0",
+  "description": "A light syntax theme using the solarized colors",
+  "repository": "https://github.com/atom/solarized-light-syntax",
+  "engines": {
+    "atom": "~0.41.0"
+  }
+}
