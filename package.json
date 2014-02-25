@@ -4,6 +4,7 @@
   "version": "0.5.0",
   "description": "A light syntax theme using the solarized colors",
   "repository": "https://github.com/atom/solarized-light-syntax",
+  "license": "MIT",
   "engines": {
     "atom": "~0.41.0"
   }
