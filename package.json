@@ -6,6 +6,6 @@
   "repository": "https://github.com/atom/solarized-light-syntax",
   "license": "MIT",
   "engines": {
-    "atom": "~0.41.0"
+    "atom": ">0.50.0"
   }
 }
