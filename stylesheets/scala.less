@@ -57,13 +57,14 @@
     }
   }
   .quasiquote {
-    opacity: 0.7;
     font-style: italic;
   }
   .string-interpolation, .quasiquote {
+    .expression *:not(.margin), .variable{
+      font-style: italic;
+    }
     .variable {
       font-weight: normal;
-      font-style: italic;
     }
   }
 }
