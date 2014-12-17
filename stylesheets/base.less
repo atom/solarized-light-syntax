@@ -54,10 +54,20 @@
 
 .entity {
   color: @yellow;
+
+  .punctuation {
+    color: @red
+  }
 }
 
 .keyword {
   color: @green;
+
+  &.other {
+    &.special-method {
+      color: @orange;
+    }
+  }
 }
 
 .storage.type {
@@ -68,13 +78,18 @@
   color: @yellow;
 
   &.numeric,
-  &.boolean {
+  &.boolean,
+  &.symbol, &.symbol .punctuation {
     color: @cyan;
   }
-}
 
-.variable {
-  color: @blue;
+  &.symbol.hashkey {
+    color: @red;
+
+    .punctuation {
+      color: @red;
+    }
+  }
 }
 
 .delimiter, .brace {
@@ -94,19 +109,53 @@
   color: @red;
 }
 
+.method .name {
+  color: @blue;
+}
+
+.operator.assignment {
+  color: @base1;
+}
+
+.parameter {
+  color: @base1;
+}
+
+.property-name {
+  color: @green;
+}
+
+.property-value {
+  .unit {
+    color: @base0;
+  }
+}
+
 .string {
   color: @cyan;
 
   .constant.character.escape {
+    color: @red;
+    font-weight: bold;
+  }
+
+  .punctuation.string {
     color: @red;
   }
 
   &.regexp {
     color: @cyan;
 
-    .source.ruby.embedded,
     .string.regexp.arbitrary-repetition {
       color: @red;
     }
+  }
+}
+
+.variable {
+  color: @blue;
+
+  &.constant {
+    color: @yellow;
   }
 }
