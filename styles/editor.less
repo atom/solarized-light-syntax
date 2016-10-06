@@ -39,3 +39,14 @@ atom-text-editor,
     border-color: @magenta;
   }
 }
+
+atom-text-editor::shadow {
+  .gutter {
+    background-color: @syntax-background-color !important;
+  }
+  .line-number {
+    background-color: @syntax-background-color;
+    color: @syntax-text-color !important;
+    padding-left: 12px;
+  }
+}

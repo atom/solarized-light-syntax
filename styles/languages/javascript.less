@@ -1,6 +1,9 @@
 .source.js {
-  .constant {
-    color: @green;
+  .constant.language {
+    color: @red;
+  }
+  .constant.numeric {
+    color: @red;
   }
 
   .comma {
@@ -46,14 +49,19 @@
     color: @cyan;
   }
 
+  .function{
+      .arrow {
+        color: @violet;
+      }
+      .parameter {
+        color: @violet;
+      }
+  }
+
   .support.function {
     color: @violet;
   }
   .support.constant {
-    color: @syntax-text-color;
-  }
-
-  .constant.numeric {
     color: @syntax-text-color;
   }
 
