@@ -1,8 +1,4 @@
 .syntax--source.syntax--js {
-  .syntax--constant {
-    color: @green;
-  }
-
   .syntax--comma {
     color: @syntax-text-color;
   }
@@ -11,11 +7,26 @@
     color: @green;
   }
 
-  .syntax--entity.syntax--name.syntax--type {
-    color: @yellow;
-  }
-  .syntax--entity.syntax--name {
-    color: @syntax-text-color;
+  .syntax--entity {
+    &.syntax--name.syntax--type {
+      color: @yellow;
+    }
+    
+    &.syntax--name {
+      color: @syntax-text-color;
+      
+      &.syntax--function {
+        color: @blue;
+      }
+    }
+    
+    &.syntax--name.syntax--tag {
+      color: @blue;
+    }
+    
+    &.syntax--other.syntax--attribute-name {
+      color: @yellow;
+    }
   }
 
   .syntax--meta.syntax--brace {
@@ -25,11 +36,12 @@
   .syntax--keyword {
     color: @syntax-text-color;
   }
+  
   .syntax--keyword.syntax--operator.syntax--new {
     color: @green;
   }
   .syntax--keyword.syntax--control {
-    color: @green;
+    color: @orange;
   }
   .syntax--keyword.syntax--control.syntax--regexp {
     color: @cyan;
@@ -61,15 +73,13 @@
   .syntax--support.syntax--function {
     color: @syntax-text-color;
   }
+  
   .syntax--support.syntax--constant {
     color: @syntax-text-color;
   }
-  .syntax--storage {
-    color: @blue;
-  }
-
-  .syntax--constant.syntax--numeric {
-    color: @syntax-text-color;
+  
+  .syntax--storage.syntax--modifier {
+    color: @yellow;
   }
 
   .syntax--punctuation.syntax--terminator.syntax--statement {
@@ -85,10 +95,7 @@
   .syntax--meta.syntax--brace.syntax--curly {
     color: @blue;
   }
-  .syntax--definition.syntax--begin.syntax--curly,
-  .syntax--definition.syntax--end.syntax--curly {
-    color: @blue;
-  }
+  
   .syntax--string.syntax--quoted.syntax--template {
     .syntax--embedded.syntax--source {
       color: @syntax-text-color;
@@ -105,10 +112,5 @@
     .syntax--control {
       color: @orange;
     }
-  }
-}
-.syntax--source.syntax--js.syntax--jsx {
-  .syntax--entity.syntax--name.syntax--tag {
-    color: @blue;
   }
 }
