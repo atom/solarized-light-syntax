@@ -1,3 +1,7 @@
+### This package is now a part of the [core Atom repository](https://github.com/atom/atom/tree/master/packages/solarized-light-syntax), please direct all issues and pull requests there in the future!
+
+---
+
 # Solarized Light Syntax theme
 
 Atom theme using the ever popular light [solarized](http://ethanschoonover.com/solarized) colors.
